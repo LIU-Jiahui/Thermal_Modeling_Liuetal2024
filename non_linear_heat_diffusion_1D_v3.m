@@ -1,8 +1,25 @@
 clear; close all;
-% 1D code to solve for heat diffusion equation taking into account
-% radiogenic heat production and non-linear conductivity
-% Here we use an implicit solver in order to easily absorbe the
-% non-linearity and to prescibe large timesteps
+%
+% Thermal_Modeling_Liuetal2024 is a free code to solve for heat diffusion
+% equation taking into account radiogenic heat production and non-linear
+% conductivity. Here we use an implicit solver in order to easily absorb
+% the non-linearity and to prescribe large timesteps
+%
+% Copyright © 2024 Institute of Geosciences, Johannes Gutenberg-University, 
+% Mainz, Germany, Nicolas Riel
+%
+% Thermal_Modeling_Liuetal2024 is free code: you can redistribute it and/or 
+% modify it under the terms of the GNU General Public License as published 
+% by the Free Software Foundation, either version 3 of the License, or any 
+% later version.
+%
+% Thermal_Modeling_Liuetal2024 is distributed in the hope that it will be
+% useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with Thermal_Modeling_Liuetal2024. If not, see https://www.gnu.org/licenses.
 
 %% Load interpolated phase diagrams
 load('phase_diagrams/volcanics_1687MTK2_mb.mat','volcanics_1687MTK2_mb')
